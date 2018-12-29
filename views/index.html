@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>musicVision</title>
+    <link rel='stylesheet' href='style.css' />
+  </head>
+  <body>
+    <header>
+       <h1>展示</h1>
+       <p>音量 <input type="range" id="volume" mix="0" max="100" value="50">
+       </p>
+       <label for="add" class="for-input">
+         选择本地音频<input type="file" onchange="return run(this.files);" id="add" />
+       </label>
+       <ul id="locale-file"></ul>
+    </header>
+    <div class="music" id="box"></div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
